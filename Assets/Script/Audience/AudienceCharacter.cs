@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class AudienceCharacter : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class AudienceCharacter : MonoBehaviour
         refData = data;
         currentEpicness = (int)Random.Range(data.epicnessNeeds.x, data.epicnessNeeds.y);
         currentRomance = (int)Random.Range(data.romanceNeeds.x, data.romanceNeeds.y);
-        this.GetComponent<SpriteRenderer>().sprite = data.calmSprite;
+        this.GetComponent<Image>().sprite = data.calmSprite;
         DebugOver = false;
     }
 

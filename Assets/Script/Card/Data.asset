@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767ea3875a9076d4cbbb5dabc460fa62, type: 3}
-  m_Name: OUrs
+  m_Script: {fileID: 11500000, guid: 5d817a25133af0941b0db8f0dedba7f3, type: 3}
+  m_Name: Data
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
@@ -36,8 +36,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  romanceNeeds: {x: 1, y: 3}
-  epicnessNeeds: {x: 3, y: 5}
-  calmSprite: {fileID: 21300000, guid: 4a8f3ff50cc1c4492bb2264023159794, type: 3}
-  impacientSprite: {fileID: 0}
-  angrySprite: {fileID: 0}
+  romance: {x: 1, y: 5}
+  epicness: {x: 3, y: 6}
+  cardSprite: {fileID: 21300000, guid: 4a8f3ff50cc1c4492bb2264023159794, type: 3}

@@ -15,32 +15,26 @@ public class AudienceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        character1.isOver.AddListener(character1Over);
-        character2.isOver.AddListener(character2Over);
-        character3.isOver.AddListener(character3Over);
+        character1.isOver.AddListener(() =>
+        {
+            progression++;
+            character1.Fill(PickAudience());
+        });
+        character2.isOver.AddListener(() =>
+        {
+            progression++;
+            character2.Fill(PickAudience());
+        });
+        character3.isOver.AddListener(() =>
+        {
+            progression++;
+            character3.Fill(PickAudience());
+        });
     }
 
     // Update is called once per frame
     void Update()
     {
-    }
-
-    void character1Over()
-    {
-        progression ++;
-        character1.Fill(PickAudience());
-    }
-
-    void character2Over()
-    {
-        progression++;
-        character2.Fill(PickAudience());
-    }
-
-    void character3Over()
-    {
-        progression++;
-        character3.Fill(PickAudience());
     }
 
     AudienceData PickAudience()
