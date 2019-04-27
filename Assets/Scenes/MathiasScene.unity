@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 270925748}
   - component: {fileID: 270925747}
   m_Layer: 5
-  m_Name: Img_Card2
+  m_Name: Img_AudienceCharacter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4572,9 +4572,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1030262046}
   - component: {fileID: 1030262048}
+  - component: {fileID: 1030262051}
   - component: {fileID: 1030262047}
+  - component: {fileID: 1030262050}
+  - component: {fileID: 1030262049}
   m_Layer: 5
-  m_Name: Img_Card1
+  m_Name: Img_AudienceCharacter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4640,6 +4643,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030262045}
   m_CullTransparentMesh: 0
+--- !u!114 &1030262049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030262045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b6cb6d526c9424a84c71059a572647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1030262050}
+  overrideController: {fileID: 22100000, guid: ef45357dbc26f454f8c9241b404696c2, type: 2}
+--- !u!95 &1030262050
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030262045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 741efe38fc3134108a892bfe6920da25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &1030262051
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030262045}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1056957860
 GameObject:
   m_ObjectHideFlags: 0
@@ -6447,7 +6495,7 @@ GameObject:
   - component: {fileID: 1385954314}
   - component: {fileID: 1385954313}
   m_Layer: 5
-  m_Name: Img_Card3
+  m_Name: Img_AudienceCharacter3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
