@@ -26,6 +26,7 @@ public class AudienceCharacter : MonoBehaviour
 
     public MyStringEvent epicnessStringUpdated;
     public MyStringEvent romanceStringUpdated;
+    public SpriteEvent cardSpriteUpdated;
     public AudienceData refData;
     public int neededEpicness = 0;
     public int neededRomance = 0;
@@ -43,9 +44,11 @@ public class AudienceCharacter : MonoBehaviour
         neededRomance = (int)Random.Range(data.romanceNeeds.x, data.romanceNeeds.y);
         currentEpicness = neededEpicness;
         currentRomance = neededRomance;
-        epicnessStringUpdated.Invoke(currentEpicness.ToString());
-        romanceStringUpdated.Invoke(currentRomance.ToString());
-        this.GetComponent<Image>().sprite = data.calmSprite;
+        if (currentEpicness > 0)
+            epicnessStringUpdated.Invoke(currentEpicness.ToString());
+        if (currentRomance > 0)
+            romanceStringUpdated.Invoke(currentRomance.ToString());
+        cardSpriteUpdated.Invoke(data.calmSprite);//this.GetComponent<Image>().sprite = data.calmSprite;
         DebugOver = false;
         isFilled.Invoke(this);
     }
@@ -83,12 +86,12 @@ public class AudienceCharacter : MonoBehaviour
             isDisappointed.Invoke(this);
         }
 
-        if (epicness != 0)
+        if (epicness != 0 && neededEpicness > 0)
         {
             epicnessStringUpdated.Invoke((currentEpicness >= 0) ? currentEpicness.ToString() : "0");
         }
 
-        if(romance != 0)
+        if(romance != 0 && neededRomance > 0)
         {
             romanceStringUpdated.Invoke((currentRomance >= 0) ? currentRomance.ToString() : "0");
         }
