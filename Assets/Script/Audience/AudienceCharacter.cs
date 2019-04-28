@@ -27,6 +27,8 @@ public class AudienceCharacter : MonoBehaviour
     public MyStringEvent epicnessStringUpdated;
     public MyStringEvent romanceStringUpdated;
     public SpriteEvent cardSpriteUpdated;
+
+    public IntEvent pointCount;
     public AudienceData refData;
     public int neededEpicness = 0;
     public int neededRomance = 0;
