@@ -24,6 +24,8 @@ public class Card : MonoBehaviour {
   [SerializeField] CardInjector injectorCard;
   [SerializeField] CardInjector injectorPlayer;
   public Position position;
+  [SerializeField] Color colorNear;
+  [SerializeField] Color colorNotNear;
 
   [Header("Flow")]
   [SerializeField] CardEvent Appeared;
@@ -31,13 +33,15 @@ public class Card : MonoBehaviour {
   [SerializeField] CardEvent Disappeared;
   [SerializeField] CardEvent EndDisappeared;
   [SerializeField] CardEvent Selected;
+  [SerializeField] ColorEvent NearSelected;
+  [SerializeField] ColorEvent NotNearSelected;
   [SerializeField] CardEvent Unselected;
   [SerializeField] CardEvent Activated;
   [SerializeField] CardEvent EndActivated;
   [SerializeField] IntEvent EpicnessActivated;
   [SerializeField] IntEvent RomanceActivated;
 
-    public CardData refData { get; set; }
+  public CardData refData { get; set; }
   public int epicness { get; set; }
   public int romance { get; set; }
   public bool isLinked { get; set; }
@@ -67,11 +71,13 @@ public class Card : MonoBehaviour {
   public void Activate() {
     Activated.Invoke(this);
     EpicnessActivated.Invoke(epicness);
-        RomanceActivated.Invoke(romance);
-    }
+    RomanceActivated.Invoke(romance);
+  }
   public void Appear() => Appeared.Invoke(this);
   public void Disappear() => Disappeared.Invoke(this);
   public void TriggerEndAppeared() => EndAppeared.Invoke(this);
   public void TriggerEndDisappeared() => EndDisappeared.Invoke(this);
   public void TriggerEndActivated() => EndActivated.Invoke(this);
+  public void TriggerNearSelected() => NearSelected.Invoke(colorNear);
+  public void TriggerNotNearSelected() => NotNearSelected.Invoke(colorNotNear);
 }

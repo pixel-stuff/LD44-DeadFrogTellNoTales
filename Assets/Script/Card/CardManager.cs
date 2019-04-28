@@ -9,6 +9,7 @@ using System;
 [Serializable] public class CardDataEvent : UnityEvent<CardData> { }
 [Serializable] public class LinkEvent : UnityEvent<Link> { }
 [Serializable] public class IntEvent : UnityEvent<int> { }
+[Serializable] public class ColorEvent : UnityEvent<Color> { }
 [Serializable] public class CardsEvent : UnityEvent<IEnumerable<Card>> { }
 
 public class CardManager : MonoBehaviour {
@@ -44,6 +45,7 @@ public class CardManager : MonoBehaviour {
     foreach(var link in links) { link.gameObject.SetActive(false); }
     InjectCard(cards[0], true);
     for(int i = 1; i < cards.Count(); i++) { InjectCard(cards[i]); }
+    UpdateNearSelectedCard(cards.FirstOrDefault(c => c.isPlayer));
   }
 
   public void InjectCard(Card card, bool setPlayer = false) {
@@ -70,22 +72,25 @@ public class CardManager : MonoBehaviour {
     return new CardData(); // should not happend
   }
 
-  public void SelectedCard(Card card) {
-    if(card.isPlayer) { return; }
+  public void SelectedCard(Card cardClicked) {
+    if(cardClicked.isPlayer) { return; }
     if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) { return; }
 
-    if(card.isLinked) {
-      TryRemoveCardFromPath(card);
+    if(cardClicked.isLinked) {
+      TryRemoveCardFromPath(cardClicked);
     } else {
       if(!selectedCards.Any()) {
-        TryAddCardToPath(card, cards.FirstOrDefault(c => c.isPlayer));
+        TryAddCardToPath(cardClicked, cards.FirstOrDefault(c => c.isPlayer));
       } else {
-        TryAddCardToPath(card, selectedCards[selectedCards.Count - 1]);
+        TryAddCardToPath(cardClicked, selectedCards[selectedCards.Count - 1]);
       }
 
       if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) {
         StartExecutePath();
+        cardClicked.TriggerNotNearSelected();
         //StartCoroutine(AnimationCardsSelectedReach());
+      } else {
+        UpdateNearSelectedCard(cardClicked);
       }
     }
     pathCountChanged.Invoke(selectedCards.Count().ToString());
@@ -99,6 +104,24 @@ public class CardManager : MonoBehaviour {
       selectedCards.Add(cardClicked);
       cardFirstSelected.Invoke(cardClicked);
       LinkActivated.Invoke(link);
+    }
+  }
+
+  void UpdateNearSelectedCard(Card cardClicked) {
+    //get all cards that are not the player
+    foreach(var c in cards) {
+      if(c.isLinked) {
+        c.TriggerNotNearSelected();
+      } else if(c.isPlayer) {
+        c.TriggerNotNearSelected();
+      } else {
+        var l = GetLink(cardClicked, c);
+        if(l != null) {
+          c.TriggerNearSelected();
+        } else {
+          c.TriggerNotNearSelected();
+        }
+      }
     }
   }
 
@@ -177,6 +200,7 @@ public class CardManager : MonoBehaviour {
         InjectCard(selectedCards[i], true);
       }
     }
+    UpdateNearSelectedCard(cards.FirstOrDefault(c => c.isPlayer));
     selectedCards.Clear();
     foreach(var link in links) { link.gameObject.SetActive(false); }
 
