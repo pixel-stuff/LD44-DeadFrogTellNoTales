@@ -34,8 +34,10 @@ public class Card : MonoBehaviour {
   [SerializeField] CardEvent Unselected;
   [SerializeField] CardEvent Activated;
   [SerializeField] CardEvent EndActivated;
+  [SerializeField] IntEvent EpicnessActivated;
+  [SerializeField] IntEvent RomanceActivated;
 
-  public CardData refData { get; set; }
+    public CardData refData { get; set; }
   public int epicness { get; set; }
   public int romance { get; set; }
   public bool isLinked { get; set; }
@@ -62,7 +64,11 @@ public class Card : MonoBehaviour {
 
   public void Select() => Selected.Invoke(this);
   public void Unselect() => Unselected.Invoke(this);
-  public void Activate() => Activated.Invoke(this);
+  public void Activate() {
+    Activated.Invoke(this);
+    EpicnessActivated.Invoke(epicness);
+        RomanceActivated.Invoke(romance);
+    }
   public void Appear() => Appeared.Invoke(this);
   public void Disappear() => Disappeared.Invoke(this);
   public void TriggerEndAppeared() => EndAppeared.Invoke(this);
