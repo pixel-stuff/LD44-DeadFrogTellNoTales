@@ -87,7 +87,7 @@ public class CardManager : MonoBehaviour {
 
       if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) {
         StartExecutePath();
-        cardClicked.TriggerNotNearSelected();
+        foreach(var card in cards) { card.TriggerNotNearSelected(); }
         //StartCoroutine(AnimationCardsSelectedReach());
       } else {
         UpdateNearSelectedCard(cardClicked);
