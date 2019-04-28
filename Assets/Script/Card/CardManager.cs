@@ -142,6 +142,8 @@ public class CardManager : MonoBehaviour {
     yield return new WaitForSeconds(0.2f);
 
 
+
+
     for(int i = 0; i < selectedCards.Count(); i++) {
       selectedCards[i].Activate();
       cardActivated.Invoke(selectedCards[i]);
@@ -165,5 +167,23 @@ public class CardManager : MonoBehaviour {
     }
     selectedCards.Clear();
     foreach(var link in links) { link.gameObject.SetActive(false); }
+  }
+
+  void StartExecutePath() {
+
+  }
+
+  void ExecutePath() {
+
+  }
+
+  public void EndDisappear(Card card) {
+
+  }
+  public void EndAppear(Card card) {
+
+  }
+  public void EndActivated(Card card) {
+
   }
 }

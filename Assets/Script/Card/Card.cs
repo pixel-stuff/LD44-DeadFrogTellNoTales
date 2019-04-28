@@ -27,10 +27,13 @@ public class Card : MonoBehaviour {
 
   [Header("Flow")]
   public CardEvent Appeared;
+  public CardEvent EndAppeared;
   public CardEvent Disappeared;
+  public CardEvent EndDisappeared;
   public CardEvent Selected;
   public CardEvent Unselected;
-  public CardEvent Activated;
+  public CardEvent Activated; 
+  public CardEvent EndActivated;
 
   public CardData refData { get; set; }
   public int epicness { get; set; }
@@ -63,4 +66,7 @@ public class Card : MonoBehaviour {
   public void Activate() => Activated.Invoke(this);
   public void Appear() => Appeared.Invoke(this);
   public void Disappear() => Disappeared.Invoke(this);
+  public void TriggerEndAppeared() => EndAppeared.Invoke(this);
+  public void TriggerEndDisappeared() => EndDisappeared.Invoke(this);
+  public void TriggerEndActivated() => EndActivated.Invoke(this);
 }
