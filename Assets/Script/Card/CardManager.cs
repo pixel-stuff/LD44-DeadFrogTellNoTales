@@ -154,10 +154,12 @@ public class CardManager : MonoBehaviour {
   public void EndDisappear(Card card) {
     if(card.isPlayer) {
       StartActivate(selectedCards[0]);
+      GetLink(card, selectedCards[0]).gameObject.SetActive(false);
     } else {
       var nextCardIndex = selectedCards.IndexOf(card) + 1;
       if(nextCardIndex < selectedCards.Count()) { // there is still card in the path to activate
         StartActivate(selectedCards[nextCardIndex]);
+        GetLink(card, selectedCards[nextCardIndex]).gameObject.SetActive(false);
       } else { // no more card to activate
         TriggerPathDone();
       }
