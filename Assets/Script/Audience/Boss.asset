@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d817a25133af0941b0db8f0dedba7f3, type: 3}
-  m_Name: Player
+  m_Script: {fileID: 11500000, guid: 767ea3875a9076d4cbbb5dabc460fa62, type: 3}
+  m_Name: Boss
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.9502411
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25,8 +25,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 10
-      value: 1
+      time: 6.294413
+      value: 0.98374784
+      inSlope: 0.01933747
+      outSlope: 0.01933747
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.06021986
+    - serializedVersion: 3
+      time: 10.008928
+      value: 1.0153302
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36,7 +45,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicness: {x: 0, y: 0}
-  romance: {x: 0, y: 0}
-  cardSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  isPlayer: 1
+  romanceNeeds: {x: 10, y: 13}
+  epicnessNeeds: {x: 8, y: 10}
+  calmSprite: {fileID: 21300000, guid: f0d4af3d055fb4c51abe961d81c2d4a5, type: 3}
+  isBoss: 1

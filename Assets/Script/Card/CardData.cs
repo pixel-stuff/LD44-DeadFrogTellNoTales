@@ -6,8 +6,9 @@ using UnityEngine;
 public class CardData : ScriptableObject {
   public AnimationCurve weightCurve = AnimationCurve.Linear(0, 1, 10, 1);
 
-  public Vector2 romance;
-  public Vector2 epicness;
+    public Vector2 epicness;
+    public Vector2 romance;
+
 
   public Sprite cardSprite;
   public bool isPlayer;
