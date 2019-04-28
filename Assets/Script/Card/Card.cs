@@ -51,7 +51,7 @@ public class Card : MonoBehaviour {
     needInject = false;
     if(!isPlayer) {
       injectorCard.InjectEpicness(epicness);
-      injectorCard.InjectRomance(epicness);
+      injectorCard.InjectRomance(romance);
       injectorCard.Inject(data);
     } else {
       injectorPlayer.Inject(data);

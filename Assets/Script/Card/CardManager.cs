@@ -72,6 +72,7 @@ public class CardManager : MonoBehaviour {
 
   public void SelectedCard(Card card) {
     if(card.isPlayer) { return; }
+    if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) { return; }
 
     if(card.isLinked) {
       TryRemoveCardFromPath(card);
@@ -104,7 +105,13 @@ public class CardManager : MonoBehaviour {
   void TryRemoveCardFromPath(Card cardClicked) {
     if(selectedCards.LastOrDefault().Equals(cardClicked)) {
       cardClicked.Unselect();
-      var link = GetLink(cardClicked, selectedCards[selectedCards.Count - 2]);
+
+      var link = default(Link);
+      if(selectedCards.Count() == 1) {
+        link = GetLink(cardClicked, cards.FirstOrDefault(c => c.isPlayer));
+      } else {
+        link = GetLink(cardClicked, selectedCards[selectedCards.Count - 2]);
+      }
       link.gameObject.SetActive(false);
       selectedCards.Remove(cardClicked);
       cardUnselected.Invoke(cardClicked);
@@ -112,25 +119,38 @@ public class CardManager : MonoBehaviour {
     }
   }
 
+  Link GetLink(Card a, Card b) {
+    //Debug.Log("ASK : " + a.position + " - " + b.position);
 
-  Link GetLink(Card a, Card b) => links.Where(l => l.linkedPositions.Contains(a.position)).FirstOrDefault(l => l.linkedPositions.Contains(b.position));
+    //var linksFirst = links.Where(l => l.linkedPositions.Contains(a.position));
+    //Debug.Log("FIRST ; " + linksFirst.Count());
+    //foreach(var l in links) { Debug.Log("" + l.linkedPositions[0] + " - " + l.linkedPositions[1]); }
+
+    //var linkSecond = linksFirst.FirstOrDefault(l => l.linkedPositions.Contains(b.position));
+    //Debug.Log("SECOOOOOOOOOOOOOOND : " + (linkSecond == null));
+    //if(linkSecond != null) {
+    //  Debug.Log("SECOND ; " + linkSecond.linkedPositions[0] + " - " + linkSecond.linkedPositions[1]);
+    //}
+
+    return links.Where(l => l.linkedPositions.Contains(a.position)).FirstOrDefault(l => l.linkedPositions.Contains(b.position));
+  }
 
 
   IEnumerator AnimationCardsSelectedReach() {
     // start activated 
     cards.FirstOrDefault(c => c.isPlayer).Disappear();
-    yield return new WaitForSeconds(1.0f);
+    yield return new WaitForSeconds(0.2f);
 
 
     for(int i = 0; i < selectedCards.Count(); i++) {
       selectedCards[i].Activate();
       cardActivated.Invoke(selectedCards[i]);
-      yield return new WaitForSeconds(2.0f);
-      selectedCards[i].Disappear();
       yield return new WaitForSeconds(1.0f);
+      selectedCards[i].Disappear();
+      yield return new WaitForSeconds(0.2f);
       cardDisappear.Invoke(selectedCards[i]);
     }
-    yield return new WaitForSeconds(1.0f);
+    yield return new WaitForSeconds(0.2f);
 
     PathDone.Invoke();
 
