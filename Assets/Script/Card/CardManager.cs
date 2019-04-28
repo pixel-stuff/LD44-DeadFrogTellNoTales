@@ -84,8 +84,8 @@ public class CardManager : MonoBehaviour {
       }
 
       if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) {
-        cardsLinkedReached.Invoke(selectedCards);
-        StartCoroutine(AnimationCardsSelectedReach());
+        StartExecutePath();
+        //StartCoroutine(AnimationCardsSelectedReach());
       }
     }
     pathCountChanged.Invoke(selectedCards.Count().ToString());
@@ -135,28 +135,40 @@ public class CardManager : MonoBehaviour {
     return links.Where(l => l.linkedPositions.Contains(a.position)).FirstOrDefault(l => l.linkedPositions.Contains(b.position));
   }
 
+  void StartExecutePath() {
+    cardsLinkedReached.Invoke(selectedCards);
 
-  IEnumerator AnimationCardsSelectedReach() {
-    // start activated 
+    // make player disappear
     cards.FirstOrDefault(c => c.isPlayer).Disappear();
-    yield return new WaitForSeconds(0.2f);
 
+    //start displaying player on first card
+    StartActivate(selectedCards[0]);
+  }
 
+  void StartActivate(Card card) {
+    card.Activate();
+    cardActivated.Invoke(card);
+  }
 
+  public void EndActivated(Card card) {
+    card.Disappear(); //make card disappear
+  }
 
-    for(int i = 0; i < selectedCards.Count(); i++) {
-      selectedCards[i].Activate();
-      cardActivated.Invoke(selectedCards[i]);
-      yield return new WaitForSeconds(1.0f);
-      selectedCards[i].Disappear();
-      yield return new WaitForSeconds(0.2f);
-      cardDisappear.Invoke(selectedCards[i]);
+  public void EndDisappear(Card card) {
+    if(card.isPlayer) { return; }
+
+    //start displaying player on next card
+    var nextCardIndex = selectedCards.IndexOf(card) + 1;
+    if(nextCardIndex < selectedCards.Count()) { // there is still card in the path to activate
+      StartActivate(selectedCards[nextCardIndex]);
+    } else { // no more card to activate
+      TriggerPathDone();
     }
-    yield return new WaitForSeconds(0.2f);
+  }
 
+  void TriggerPathDone() {
     PathDone.Invoke();
 
-    //reset all card
     InjectCard(cards.FirstOrDefault(c => c.isPlayer));
     for(int i = 0; i < selectedCards.Count(); i++) {
       if(i < selectedCards.Count() - 1) {
@@ -167,23 +179,10 @@ public class CardManager : MonoBehaviour {
     }
     selectedCards.Clear();
     foreach(var link in links) { link.gameObject.SetActive(false); }
-  }
-
-  void StartExecutePath() {
 
   }
 
-  void ExecutePath() {
-
-  }
-
-  public void EndDisappear(Card card) {
-
-  }
   public void EndAppear(Card card) {
-
-  }
-  public void EndActivated(Card card) {
 
   }
 }

@@ -39,7 +39,7 @@ public class Card : MonoBehaviour {
   public int epicness { get; set; }
   public int romance { get; set; }
   public bool isLinked { get; set; }
-  public bool isPlayer { get; set; }
+  public bool isPlayer { get { return refData.isPlayer; } }
   public bool needInject { get; set; }
 
   public bool DebugDisappear = true;
@@ -50,7 +50,6 @@ public class Card : MonoBehaviour {
     romance = data.GetRomance();
     DebugDisappear = false;
     isLinked = false;
-    isPlayer = data.isPlayer;
     needInject = false;
     if(!isPlayer) {
       injectorCard.InjectEpicness(epicness);

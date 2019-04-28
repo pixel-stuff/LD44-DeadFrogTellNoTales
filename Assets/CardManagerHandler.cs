@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CardManagerHandler : MonoBehaviour {
 
-  public CardManager cardManager {
+  CardManager cardManager;
+  public CardManager CardManager {
     get {
       if(cardManager == null) { cardManager = FindObjectOfType<CardManager>(); }
 
@@ -13,8 +14,8 @@ public class CardManagerHandler : MonoBehaviour {
     set { cardManager = value; }
   }
 
-  public void SelectedCard(Card card) => cardManager.SelectedCard(card);
-  public void EndDisappear(Card card) => cardManager.EndDisappear(card);
-  public void EndAppear(Card card) => cardManager.EndAppear(card);
-  public void EndActivated(Card card) => cardManager.EndActivated(card);
+  public void SelectedCard(Card card) => CardManager.SelectedCard(card);
+  public void EndDisappear(Card card) => CardManager.EndDisappear(card);
+  public void EndAppear(Card card) => CardManager.EndAppear(card);
+  public void EndActivated(Card card) => CardManager.EndActivated(card);
 }
