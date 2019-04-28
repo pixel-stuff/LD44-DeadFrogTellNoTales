@@ -37,6 +37,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   epicness: {x: 1, y: 5}
+  epicnessData: {fileID: 11400000, guid: b6d01159d1c1e4f44bd7615169ce43c0, type: 2}
   romance: {x: 1, y: 3}
+  romanceData: {fileID: 11400000, guid: 45bf82e878a29456da785a8c2b6344f7, type: 2}
   cardSprite: {fileID: 21300000, guid: 942e5a49d14e2754ba99fd4fc1d25e8b, type: 3}
   isPlayer: 0

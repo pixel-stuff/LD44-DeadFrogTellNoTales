@@ -58,9 +58,9 @@ public class Card : MonoBehaviour {
     isLinked = false;
     needInject = false;
     if(!isPlayer) {
+      injectorCard.Inject(data); // -> always call this one before epicness/romance -> risk of death
       injectorCard.InjectEpicness(epicness);
       injectorCard.InjectRomance(romance);
-      injectorCard.Inject(data);
     } else {
       injectorPlayer.Inject(data);
     }

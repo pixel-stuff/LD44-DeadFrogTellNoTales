@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Audience", order = 1)]
+[CreateAssetMenu(fileName = "Audience", menuName = "Data/Audience", order = 1)]
 public class AudienceData : ScriptableObject
 {
      public AnimationCurve weightCurve = AnimationCurve.Linear(0, 1, 10, 1);

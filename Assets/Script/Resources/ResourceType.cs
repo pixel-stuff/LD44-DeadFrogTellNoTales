@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum RessourceTypeEnum
-{
-    Epicness,
-    Romance
+public enum ResourceType {
+  Epicness,
+  Romance
 }
