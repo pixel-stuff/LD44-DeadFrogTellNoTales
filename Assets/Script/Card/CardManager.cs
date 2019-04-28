@@ -140,9 +140,6 @@ public class CardManager : MonoBehaviour {
 
     // make player disappear
     cards.FirstOrDefault(c => c.isPlayer).Disappear();
-
-    //start displaying player on first card
-    StartActivate(selectedCards[0]);
   }
 
   void StartActivate(Card card) {
@@ -155,14 +152,15 @@ public class CardManager : MonoBehaviour {
   }
 
   public void EndDisappear(Card card) {
-    if(card.isPlayer) { return; }
-
-    //start displaying player on next card
-    var nextCardIndex = selectedCards.IndexOf(card) + 1;
-    if(nextCardIndex < selectedCards.Count()) { // there is still card in the path to activate
-      StartActivate(selectedCards[nextCardIndex]);
-    } else { // no more card to activate
-      TriggerPathDone();
+    if(card.isPlayer) {
+      StartActivate(selectedCards[0]);
+    } else {
+      var nextCardIndex = selectedCards.IndexOf(card) + 1;
+      if(nextCardIndex < selectedCards.Count()) { // there is still card in the path to activate
+        StartActivate(selectedCards[nextCardIndex]);
+      } else { // no more card to activate
+        TriggerPathDone();
+      }
     }
   }
 

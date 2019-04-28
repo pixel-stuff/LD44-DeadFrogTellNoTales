@@ -26,14 +26,14 @@ public class Card : MonoBehaviour {
   public Position position;
 
   [Header("Flow")]
-  public CardEvent Appeared;
-  public CardEvent EndAppeared;
-  public CardEvent Disappeared;
-  public CardEvent EndDisappeared;
-  public CardEvent Selected;
-  public CardEvent Unselected;
-  public CardEvent Activated; 
-  public CardEvent EndActivated;
+  [SerializeField] CardEvent Appeared;
+  [SerializeField] CardEvent EndAppeared;
+  [SerializeField] CardEvent Disappeared;
+  [SerializeField] CardEvent EndDisappeared;
+  [SerializeField] CardEvent Selected;
+  [SerializeField] CardEvent Unselected;
+  [SerializeField] CardEvent Activated;
+  [SerializeField] CardEvent EndActivated;
 
   public CardData refData { get; set; }
   public int epicness { get; set; }
