@@ -7320,7 +7320,7 @@ ParticleSystem:
     influenceFilter: 0
     influenceMask:
       serializedVersion: 2
-      m_Bits: 256
+      m_Bits: 2048
     influenceList: []
   ClampVelocityModule:
     enabled: 0
@@ -8705,7 +8705,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 256
+      m_Bits: 2048
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -12097,7 +12097,7 @@ ParticleSystem:
     influenceFilter: 0
     influenceMask:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 8192
     influenceList: []
   ClampVelocityModule:
     enabled: 0
@@ -13482,7 +13482,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 8192
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -21645,7 +21645,7 @@ ParticleSystem:
     influenceFilter: 0
     influenceMask:
       serializedVersion: 2
-      m_Bits: 512
+      m_Bits: 4096
     influenceList: []
   ClampVelocityModule:
     enabled: 0
@@ -23030,7 +23030,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 512
+      m_Bits: 4096
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
