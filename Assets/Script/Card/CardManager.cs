@@ -30,6 +30,7 @@ public class CardManager : MonoBehaviour {
 
   [SerializeField] StringEvent pathCountChanged;
   [SerializeField] CardsEvent cardsLinkedReached;
+  [SerializeField] UnityEvent PathDone;
 
   [HideInInspector] public int usedCardCount = 0;
 
@@ -130,6 +131,8 @@ public class CardManager : MonoBehaviour {
       cardDisappear.Invoke(selectedCards[i]);
     }
     yield return new WaitForSeconds(1.0f);
+
+    PathDone.Invoke();
 
     //reset all card
     InjectCard(cards.FirstOrDefault(c => c.isPlayer));
