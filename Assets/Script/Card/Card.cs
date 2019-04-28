@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[Serializable] public class CardEvent : UnityEvent<Card> { }
+
 public enum Position {
   TopLeft,
   TopMiddle,
@@ -49,7 +49,7 @@ public class Card : MonoBehaviour {
     isLinked = false;
     isPlayer = data.isPlayer;
     needInject = false;
-    if(isPlayer) {
+    if(!isPlayer) {
       injectorCard.InjectEpicness(epicness);
       injectorCard.InjectRomance(epicness);
       injectorCard.Inject(data);

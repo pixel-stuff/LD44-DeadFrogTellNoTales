@@ -9,12 +9,17 @@ using UnityEngine.Events;
 
 
 public class CardInjector : MonoBehaviour {
+
   [SerializeField] SpriteEvent backgroundSprite;
   [SerializeField] StringEvent epicness;
   [SerializeField] StringEvent romance;
 
+  [Header("Flow")]
+  [SerializeField] CardDataEvent cardData;
+
   public void Inject(CardData cardData) {
     backgroundSprite.Invoke(cardData.cardSprite);
+    this.cardData.Invoke(cardData);
   }
 
   public void InjectEpicness(float epicness) => this.epicness.Invoke(epicness.ToString());

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d817a25133af0941b0db8f0dedba7f3, type: 3}
-  m_Name: Data
+  m_Name: Pedro
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
@@ -39,3 +39,4 @@ MonoBehaviour:
   romance: {x: 1, y: 5}
   epicness: {x: 3, y: 6}
   cardSprite: {fileID: 21300000, guid: 4a8f3ff50cc1c4492bb2264023159794, type: 3}
+  isPlayer: 0
