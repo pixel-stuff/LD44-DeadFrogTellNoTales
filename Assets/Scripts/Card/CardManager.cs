@@ -88,9 +88,7 @@ public class CardManager : MonoBehaviour {
       if(selectedCards.Count() >= NUMBER_LINKABLE_CARD) {
         StartExecutePath();
         foreach(var card in cards) { card.TriggerNotNearSelected(); }
-        //StartCoroutine(AnimationCardsSelectedReach());
-      } else {
-        UpdateNearSelectedCard(cardClicked);
+        SetAllCardToNotNear();
       }
     }
     pathCountChanged.Invoke(selectedCards.Count().ToString());
@@ -107,6 +105,11 @@ public class CardManager : MonoBehaviour {
     }
   }
 
+  void SetAllCardToNotNear() {
+    foreach(var card in cards) {
+      card.TriggerNotNearSelected();
+    }
+  }
   void UpdateNearSelectedCard(Card cardClicked) {
     //get all cards that are not the player
     foreach(var c in cards) {

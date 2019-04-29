@@ -29,8 +29,8 @@ public class CardInjector : MonoBehaviour {
   CardData lastInjectedData;
 
   public void Inject(CardData cardData) {
-        lastInjectedData = cardData;
-        backgroundSprite.Invoke(cardData.cardSprite);
+    lastInjectedData = cardData;
+    backgroundSprite.Invoke(cardData.cardSprite);
     this.cardData.Invoke(cardData);
   }
 
@@ -42,11 +42,12 @@ public class CardInjector : MonoBehaviour {
       if(epicnessValue > 0) {
         epicnessSprite.Invoke(resource.data.goodSprite);
         epicnessColor.Invoke(resource.data.goodColor);
+        this.epicnessValue.Invoke(string.Concat("+", epicnessValue.ToString()));
       } else {
         epicnessSprite.Invoke(resource.data.badSprite);
         epicnessColor.Invoke(resource.data.badColor);
+        this.epicnessValue.Invoke(epicnessValue.ToString());
       }
-      this.epicnessValue.Invoke(epicnessValue.ToString());
     }
   }
 
@@ -56,15 +57,14 @@ public class CardInjector : MonoBehaviour {
     } else {
       var resource = lastInjectedData.ressources.FirstOrDefault(r => r.type == ResourceType.Romance);
       if(romanceValue > 0) {
-        epicnessSprite.Invoke(resource.data.goodSprite);
-        epicnessColor.Invoke(resource.data.goodColor);
-        this.romanceValue.Invoke(string.Concat("-", romanceValue.ToString()));
+        romanceSprite.Invoke(resource.data.goodSprite);
+        romanceColor.Invoke(resource.data.goodColor);
+        this.romanceValue.Invoke(string.Concat("+", romanceValue.ToString()));
       } else {
-        epicnessSprite.Invoke(resource.data.badSprite);
-        epicnessColor.Invoke(resource.data.badColor);
-        this.epicnessValue.Invoke(string.Concat("-", romanceValue.ToString()));
+        romanceSprite.Invoke(resource.data.badSprite);
+        romanceColor.Invoke(resource.data.badColor);
+        this.romanceValue.Invoke(romanceValue.ToString());
       }
-      this.romanceValue.Invoke(epicnessValue.ToString());
     }
   }
 }

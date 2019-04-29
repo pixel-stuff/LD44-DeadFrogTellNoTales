@@ -36,4 +36,6 @@ public class CardData : ScriptableObject {
   [Header("Card")]
   public Sprite cardSprite;
   public bool isPlayer;
+  public Sprite[] animationsSprite;
+
 }

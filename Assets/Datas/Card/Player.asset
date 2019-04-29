@@ -36,9 +36,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicness: {x: 0, y: 0}
-  epicnessData: {fileID: 11400000, guid: b6d01159d1c1e4f44bd7615169ce43c0, type: 2}
-  romance: {x: 0, y: 0}
-  romanceData: {fileID: 11400000, guid: 45bf82e878a29456da785a8c2b6344f7, type: 2}
+  ressources: []
   cardSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   isPlayer: 1
+  animationsSprite:
+  - {fileID: 21300000, guid: 93f2a0153e0aa4ed694662f0e3476e44, type: 3}
+  - {fileID: 21300000, guid: 3a7dfc4fe380f4799971fd7de6f3d968, type: 3}
+  - {fileID: 21300000, guid: bf09d74b3dcec4de78c26aa907941094, type: 3}
+  - {fileID: 21300000, guid: 96b4dfb7251024cc6b6fe22c17c1cdf6, type: 3}

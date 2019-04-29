@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b677548f40c544c098c6382fe9a57dec, type: 3}
   m_Name: Epicness
   m_EditorClassIdentifier: 
-  type: 0
-  goodSprite: {fileID: 0}
-  goodColor: {r: 0.2627451, g: 0.30700302, b: 0.8, a: 1}
-  badSprite: {fileID: 0}
-  badColor: {r: 0.40784314, g: 0.41714194, b: 0.47058824, a: 1}
+  goodSprite: {fileID: 21300000, guid: a113d9c891b5b4cd8b551abc8a2e7808, type: 3}
+  goodColor: {r: 0.4627451, g: 0.74509805, b: 0.7254902, a: 1}
+  badSprite: {fileID: 21300000, guid: f4eeed610e77b4272a7102048320283f, type: 3}
+  badColor: {r: 0.6117647, g: 0.6117647, b: 0.6117647, a: 1}
