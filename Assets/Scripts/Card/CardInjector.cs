@@ -57,11 +57,13 @@ public class CardInjector : MonoBehaviour {
       if(romanceValue > 0) {
         epicnessSprite.Invoke(resource.data.goodSprite);
         epicnessColor.Invoke(resource.data.goodColor);
+        this.romanceValue.Invoke(string.Concat("-", romanceValue.ToString()));
       } else {
         epicnessSprite.Invoke(resource.data.badSprite);
         epicnessColor.Invoke(resource.data.badColor);
+        this.epicnessValue.Invoke(string.Concat("-", romanceValue.ToString()));
       }
-      this.epicnessValue.Invoke(epicnessValue.ToString());
+      this.romanceValue.Invoke(epicnessValue.ToString());
     }
   }
 }
