@@ -369,7 +369,9 @@ PrefabInstance:
     - target: {fileID: 4741677842043309383, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
         type: 3}
       propertyPath: m_Text
-      value: lvl. 3
+      value: 'Throne
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4741677842043309383, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
         type: 3}
@@ -381,6 +383,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677840438174263, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: add21b5be2beb43569303fc8403256cc,
+        type: 3}
+    - target: {fileID: 4741677840438174263, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Throne
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ac18c888ee22f740b9d6d1cd16076a7, type: 3}
