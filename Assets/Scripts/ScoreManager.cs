@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour {
-  public MyStringEvent scoreEvent;
+  public StringEvent scoreEvent;
   public int score = 0;
   public int romanceMultiplicator = 5;
   public int epicnessMultiplicator = 5;

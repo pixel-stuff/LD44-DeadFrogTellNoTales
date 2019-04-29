@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class TimerManager : MonoBehaviour
 {
-    public MyStringEvent timerEvent;
+    public StringEvent timerEvent;
     public UnityEvent timeOver;
     public float maxTimeSecond = 30.0f;
     public float timeSecond = 30.0f;

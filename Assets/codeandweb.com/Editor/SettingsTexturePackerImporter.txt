@@ -8,11 +8,11 @@ tpsheetFileNames:
 - Assets/Sprites/Audience/horse.tpsheet
 - Assets/Sprites/Audience/lama.tpsheet
 - Assets/Sprites/Audience/pigeon.tpsheet
-- Assets/Sprites/bear_canvas.tpsheet
-- Assets/Sprites/dog_canvas.tpsheet
-- Assets/Sprites/horse_canvas.tpsheet
-- Assets/Sprites/lama_canvas.tpsheet
-- Assets/Sprites/pigeon_canvas.tpsheet
+- Assets/Sprites/AudienceCanvas/bear_canvas.tpsheet
+- Assets/Sprites/AudienceCanvas/dog_canvas.tpsheet
+- Assets/Sprites/AudienceCanvas/horse_canvas.tpsheet
+- Assets/Sprites/AudienceCanvas/lama_canvas.tpsheet
+- Assets/Sprites/AudienceCanvas/pigeon_canvas.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/Audience/bear.png
@@ -21,11 +21,11 @@ textureFileNames:
 - Assets/Sprites/Audience/horse.png
 - Assets/Sprites/Audience/lama.png
 - Assets/Sprites/Audience/pigeon.png
-- Assets/Sprites/bear_canvas.png
-- Assets/Sprites/dog_canvas.png
-- Assets/Sprites/horse_canvas.png
-- Assets/Sprites/lama_canvas.png
-- Assets/Sprites/pigeon_canvas.png
+- Assets/Sprites/AudienceCanvas/bear_canvas.png
+- Assets/Sprites/AudienceCanvas/dog_canvas.png
+- Assets/Sprites/AudienceCanvas/horse_canvas.png
+- Assets/Sprites/AudienceCanvas/lama_canvas.png
+- Assets/Sprites/AudienceCanvas/pigeon_canvas.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 - 
