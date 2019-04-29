@@ -36,7 +36,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicnessNeeds: {x: 0, y: 0}
-  romanceNeeds: {x: 3, y: 5}
+  epicnessNeeds: {x: 2, y: 4}
+  romanceNeeds: {x: 0, y: 0}
   calmSprite: {fileID: 21300000, guid: aee24c54c6a073545901676832dc9fae, type: 3}
   isBoss: 0

@@ -1677,6 +1677,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d6a4dbbb3c8b47a2a79ebf79d8b8894, type: 2}
   - {fileID: 11400000, guid: a32f6ba1ecd954bdb99c0c339813b62b, type: 2}
   - {fileID: 11400000, guid: 3165a46f70cdc4058a2e26e030c0df0a, type: 2}
+  - {fileID: 11400000, guid: 27e7b734471864550b8a986e3beae9eb, type: 2}
+  - {fileID: 11400000, guid: 425c77ce3b3114fd4b2ed9f6cd8b884b, type: 2}
+  - {fileID: 11400000, guid: 057e7947d0bd24b1eac2d712b00ce4a3, type: 2}
+  - {fileID: 11400000, guid: 8237558a7d83d4cc8a504ed3c78ebb14, type: 2}
   cards:
   - {fileID: 1199112825}
   - {fileID: 1906940075}
@@ -2278,8 +2282,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  maxTimeSecond: 30
-  timeSecond: 30
+  maxTimeSecond: 50
+  timeSecond: 0
   pixelToMove: 100
   Candle: {fileID: 1123620852}
 --- !u!1001 &591143380
