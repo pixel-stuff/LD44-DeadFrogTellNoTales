@@ -26,8 +26,8 @@ TagManager:
   - Card2Crowd
   - Card3Crowd
   - Coin
-  - 
-  - 
+  - Player
+  - UI2
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 216414977
     locked: 0
   - name: particule
     uniqueID: 2663443043
