@@ -41,8 +41,9 @@ public class CardData : ScriptableObject {
   int randomImageInjected;
 
   public Sprite GetRandomSprite() {
+    var sprite = animationsSprite[randomImageInjected % animationsSprite.Count()];
     randomImageInjected++;
-    return animationsSprite[randomImageInjected % animationsSprite.Count()];
+    return sprite;
   }
 
 }
