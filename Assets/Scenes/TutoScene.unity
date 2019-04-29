@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deck:
-  - {fileID: 11400000, guid: ec10e1c15dfe6ea44bed5dc0e3142d65, type: 2}
+  - {fileID: 11400000, guid: 9ab1e6204a4a3014d96b0d43350ce0e2, type: 2}
   - {fileID: 11400000, guid: 0d6a4dbbb3c8b47a2a79ebf79d8b8894, type: 2}
   cards:
   - {fileID: 1199112825}

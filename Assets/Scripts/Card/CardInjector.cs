@@ -29,7 +29,8 @@ public class CardInjector : MonoBehaviour {
   CardData lastInjectedData;
 
   public void Inject(CardData cardData) {
-    backgroundSprite.Invoke(cardData.cardSprite);
+        lastInjectedData = cardData;
+        backgroundSprite.Invoke(cardData.cardSprite);
     this.cardData.Invoke(cardData);
   }
 
