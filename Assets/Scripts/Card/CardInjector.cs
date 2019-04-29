@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
 
 [Serializable] public class SpriteEvent : UnityEvent<Sprite> { }
 [Serializable] public class StringEvent : UnityEvent<string> { }
@@ -36,12 +37,13 @@ public class CardInjector : MonoBehaviour {
     if(epicnessValue == 0) {
       this.noEpicness.Invoke();
     } else {
+      var resource = lastInjectedData.ressources.FirstOrDefault(r => r.type == ResourceType.Epicness);
       if(epicnessValue > 0) {
-        epicnessSprite.Invoke(lastInjectedData.epicnessData.goodSprite);
-        epicnessColor.Invoke(lastInjectedData.epicnessData.goodColor);
+        epicnessSprite.Invoke(resource.data.goodSprite);
+        epicnessColor.Invoke(resource.data.goodColor);
       } else {
-        epicnessSprite.Invoke(lastInjectedData.epicnessData.badSprite);
-        epicnessColor.Invoke(lastInjectedData.epicnessData.badColor);
+        epicnessSprite.Invoke(resource.data.badSprite);
+        epicnessColor.Invoke(resource.data.badColor);
       }
       this.epicnessValue.Invoke(epicnessValue.ToString());
     }
@@ -51,14 +53,15 @@ public class CardInjector : MonoBehaviour {
     if(romanceValue == 0) {
       this.noRomance.Invoke();
     } else {
+      var resource = lastInjectedData.ressources.FirstOrDefault(r => r.type == ResourceType.Romance);
       if(romanceValue > 0) {
-        romanceSprite.Invoke(lastInjectedData.romanceData.goodSprite);
-        romanceColor.Invoke(lastInjectedData.romanceData.goodColor);
+        epicnessSprite.Invoke(resource.data.goodSprite);
+        epicnessColor.Invoke(resource.data.goodColor);
       } else {
-        romanceSprite.Invoke(lastInjectedData.romanceData.badSprite);
-        romanceColor.Invoke(lastInjectedData.romanceData.badColor);
+        epicnessSprite.Invoke(resource.data.badSprite);
+        epicnessColor.Invoke(resource.data.badColor);
       }
-      this.romanceValue.Invoke(romanceValue.ToString());
+      this.epicnessValue.Invoke(epicnessValue.ToString());
     }
   }
 }

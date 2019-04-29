@@ -4,5 +4,6 @@ using UnityEngine;
 
 public enum ResourceType {
   Epicness,
-  Romance
+  Romance,
+  Legend
 }
