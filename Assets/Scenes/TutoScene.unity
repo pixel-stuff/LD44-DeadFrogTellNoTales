@@ -2017,108 +2017,31 @@ MonoBehaviour:
   - {fileID: 1886684172}
   cardInjected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardInjected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardFirstSelected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardFirstSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardSelected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardUnselected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardUnselected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   LinkActivated:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogLinkActivated
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: LinkEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   LinkDesactivated:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogLinkDesactivated
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: LinkEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardActivated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardActivated
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1393633749}
         m_MethodName: CardActive
         m_Mode: 0
@@ -2133,48 +2056,15 @@ MonoBehaviour:
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardDisappear:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LogCardDisappear
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   pathCountChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Log
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: StringEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   cardsLinkedReached:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Log
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Path finished
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: CardsEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   PathDone:
     m_PersistentCalls:
@@ -12994,25 +12884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContainerAudience (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 26999181789179588, guid: f9e274405b19f334f8277f18fa149250,
+    - target: {fileID: 3330510040175219431, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
       propertyPath: m_Layer
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindMain
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindTurbulence
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1622480893443583926, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
@@ -13119,6 +12994,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 26999181789179588, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindMain
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindTurbulence
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2465830584150473991, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
       propertyPath: m_Alpha
@@ -13183,11 +13078,6 @@ PrefabInstance:
         type: 3}
       propertyPath: isComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330510040175219431, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4086379684797296426, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
@@ -13389,25 +13279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContainerAudience (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 26999181789179588, guid: f9e274405b19f334f8277f18fa149250,
+    - target: {fileID: 3330510040175219431, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
       propertyPath: m_Layer
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindMain
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindTurbulence
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1622480893443583926, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
@@ -13514,6 +13389,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 26999181789179588, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindMain
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindTurbulence
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2465830584150473991, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
       propertyPath: m_Alpha
@@ -13583,11 +13478,6 @@ PrefabInstance:
         type: 3}
       propertyPath: isComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330510040175219431, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4086379684797296426, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
@@ -13779,21 +13669,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContainerAudience
       objectReference: {fileID: 0}
-    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindMain
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
-        type: 3}
-      propertyPath: m_WindTurbulence
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1622480893443583926, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13898,6 +13773,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 459562067232715659, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindMain
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210899960063101752, guid: f9e274405b19f334f8277f18fa149250,
+        type: 3}
+      propertyPath: m_WindTurbulence
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2674183702565928342, guid: f9e274405b19f334f8277f18fa149250,
         type: 3}
