@@ -43,7 +43,7 @@ WindZone:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26999181789179588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Mode: 1
   m_Radius: 200
   m_WindMain: -100
@@ -4805,7 +4805,7 @@ WindZone:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459562067232715659}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Mode: 1
   m_Radius: 200
   m_WindMain: -100
