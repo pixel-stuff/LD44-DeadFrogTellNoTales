@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d817a25133af0941b0db8f0dedba7f3, type: 3}
-  m_Name: Map
+  m_Name: BattleHaxe
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
@@ -36,9 +36,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ressources:
-  - values: {x: 2, y: 2}
-    type: 0
-    data: {fileID: 11400000, guid: b6d01159d1c1e4f44bd7615169ce43c0, type: 2}
-  cardSprite: {fileID: 21300000, guid: 38ce99ac9f9bd4600bcf93dd8bf00614, type: 3}
+  ressources: []
+  cardSprite: {fileID: 21300000, guid: 0276a195e12424798839270254e259dd, type: 3}
   isPlayer: 0
