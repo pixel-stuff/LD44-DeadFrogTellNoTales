@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.Events;
 using System;
+using UnityEngine.UI;
 
 [Serializable] public class CardEvent : UnityEvent<Card> { }
 [Serializable] public class CardDataEvent : UnityEvent<CardData> { }
@@ -111,6 +112,7 @@ public class CardManager : MonoBehaviour {
       card.TriggerNotNearSelected();
     }
   }
+
   void UpdateNearSelectedCard(Card cardClicked) {
     //get all cards that are not the player
     foreach(var c in cards) {
@@ -215,4 +217,10 @@ public class CardManager : MonoBehaviour {
   public void EndAppear(Card card) {
 
   }
+
+  public void InjectRandomPlayerImage(Image image) {
+    var playerData = cards.FirstOrDefault(c => c.isPlayer).refData;
+    image.sprite = playerData.GetRandomSprite();
+  }
+
 }

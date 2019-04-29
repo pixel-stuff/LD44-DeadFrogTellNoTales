@@ -38,4 +38,11 @@ public class CardData : ScriptableObject {
   public bool isPlayer;
   public Sprite[] animationsSprite;
 
+  int randomImageInjected;
+
+  public Sprite GetRandomSprite() {
+    randomImageInjected++;
+    return animationsSprite[randomImageInjected % animationsSprite.Count()];
+  }
+
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardManagerHandler : MonoBehaviour {
 
@@ -18,4 +19,6 @@ public class CardManagerHandler : MonoBehaviour {
   public void EndDisappear(Card card) => CardManager.EndDisappear(card);
   public void EndAppear(Card card) => CardManager.EndAppear(card);
   public void EndActivated(Card card) => CardManager.EndActivated(card);
+  public void InjectRandomPlayerImage(Image image) => CardManager.InjectRandomPlayerImage(image);
+
 }
