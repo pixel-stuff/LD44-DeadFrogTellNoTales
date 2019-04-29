@@ -2,31 +2,30 @@ fileFormatVersion: 2
 guid: 33fb47938b1064c80a67c9df9b8936f1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: candle
-    21300002: candle_00000
-    21300004: candle_00001
-    21300006: candle_00002
-    21300008: candle_00003
-    21300010: candle_00004
-    21300012: candle_00005
-    21300014: candle_00006
-    21300016: candle_00007
-    21300018: candle_00008
-    21300020: candle_00009
-    21300022: candle_00010
-    21300024: candle_00011
-    21300026: candle_00012
-    21300028: candle_00013
-    21300030: candle_00014
-    21300032: candle_00015
-    21300034: candle_00016
-    21300036: candle_00017
-    21300038: candle_00018
-    21300040: candle_00019
-    21300042: candle_00020
-    21300044: candle_00021
-    21300046: candle_00022
-    21300048: candle_00023
+    21300000: candle_00000
+    21300002: candle_00001
+    21300004: candle_00002
+    21300006: candle_00003
+    21300008: candle_00004
+    21300010: candle_00005
+    21300012: candle_00006
+    21300014: candle_00007
+    21300016: candle_00008
+    21300018: candle_00009
+    21300020: candle_00010
+    21300022: candle_00011
+    21300024: candle_00012
+    21300026: candle_00013
+    21300028: candle_00014
+    21300030: candle_00015
+    21300032: candle_00016
+    21300034: candle_00017
+    21300036: candle_00018
+    21300038: candle_00019
+    21300040: candle_00020
+    21300042: candle_00021
+    21300044: candle_00022
+    21300046: candle_00023
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -67,7 +66,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -101,18 +100,18 @@ TextureImporter:
       name: candle_00000
       rect:
         serializedVersion: 2
-        x: 211
-        y: 478
-        width: 105
-        height: 185
-      alignment: 9
-      pivot: {x: 0.5619048, y: 0.41621622}
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7eeae56340c754712baf0cbd19c5ae89
+      spriteID: 9ed8866121a1449bfa559b5d45c0c499
       vertices: []
       indices: 
       edges: []
@@ -121,18 +120,18 @@ TextureImporter:
       name: candle_00001
       rect:
         serializedVersion: 2
-        x: 420
-        y: 668
-        width: 108
-        height: 179
-      alignment: 9
-      pivot: {x: 0.5555556, y: 0.44134077}
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbcf2e0ffa0d747b789cf244d168cbed
+      spriteID: 0c188784354fc4994a8bc418938667c2
       vertices: []
       indices: 
       edges: []
@@ -141,18 +140,18 @@ TextureImporter:
       name: candle_00002
       rect:
         serializedVersion: 2
-        x: 1
-        y: 855
-        width: 107
-        height: 168
-      alignment: 9
-      pivot: {x: 0.62616825, y: 0.4047619}
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b809e166441df4a6db5b7dd843263caa
+      spriteID: c7458dc4bd88b4b73b7540f0bf4b6b74
       vertices: []
       indices: 
       edges: []
@@ -161,18 +160,18 @@ TextureImporter:
       name: candle_00003
       rect:
         serializedVersion: 2
-        x: 421
-        y: 472
-        width: 110
-        height: 191
-      alignment: 9
-      pivot: {x: 0.6636364, y: 0.4450262}
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d05ec7a9d2a754742ad2f9a9e04305d7
+      spriteID: 3d3f501652b964a0c9ad6cf08cbcd43c
       vertices: []
       indices: 
       edges: []
@@ -181,18 +180,18 @@ TextureImporter:
       name: candle_00004
       rect:
         serializedVersion: 2
-        x: 527
-        y: 852
-        width: 99
-        height: 171
-      alignment: 9
-      pivot: {x: 0.6666667, y: 0.42105263}
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a2b74a9ff4e64163b76f28a083b8d64
+      spriteID: 5c12b705b4f224d9089e3bdb718f6ef3
       vertices: []
       indices: 
       edges: []
@@ -201,18 +200,18 @@ TextureImporter:
       name: candle_00005
       rect:
         serializedVersion: 2
-        x: 530
-        y: 667
-        width: 95
-        height: 180
-      alignment: 9
-      pivot: {x: 0.67368424, y: 0.41111112}
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fb0ba3b704574bedadcff03675f1cfa
+      spriteID: 84656c12e85ac4621a7f608401a1997f
       vertices: []
       indices: 
       edges: []
@@ -221,18 +220,18 @@ TextureImporter:
       name: candle_00006
       rect:
         serializedVersion: 2
-        x: 319
-        y: 853
-        width: 98
-        height: 170
-      alignment: 9
-      pivot: {x: 0.64285713, y: 0.41764706}
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bbd82806a1514915b876f08337c673d
+      spriteID: c6a16f012f8e84103b89269f3dc2b973
       vertices: []
       indices: 
       edges: []
@@ -241,18 +240,18 @@ TextureImporter:
       name: candle_00007
       rect:
         serializedVersion: 2
-        x: 837
-        y: 849
-        width: 103
-        height: 174
-      alignment: 9
-      pivot: {x: 0.65048546, y: 0.44827586}
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20535e89cf1f04607a53cc6e0b87195d
+      spriteID: c60174e6a5f7740b29755307c265b312
       vertices: []
       indices: 
       edges: []
@@ -261,18 +260,18 @@ TextureImporter:
       name: candle_00008
       rect:
         serializedVersion: 2
-        x: 318
-        y: 478
-        width: 101
-        height: 185
-      alignment: 9
-      pivot: {x: 0.6039604, y: 0.39459458}
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 141fc9ef325eb4d9095ec4b7acf20022
+      spriteID: 4eb8234a861a14ddcb627d0be9c7fb98
       vertices: []
       indices: 
       edges: []
@@ -281,18 +280,18 @@ TextureImporter:
       name: candle_00009
       rect:
         serializedVersion: 2
-        x: 106
-        y: 672
-        width: 100
-        height: 175
-      alignment: 9
-      pivot: {x: 0.58, y: 0.4457143}
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6999225fe1254e01af8119ff8639f6c
+      spriteID: d8da276a426f34c638292e79c13dd260
       vertices: []
       indices: 
       edges: []
@@ -301,18 +300,18 @@ TextureImporter:
       name: candle_00010
       rect:
         serializedVersion: 2
-        x: 419
-        y: 852
-        width: 106
-        height: 171
-      alignment: 9
-      pivot: {x: 0.5566038, y: 0.43274853}
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72c9e5ea027c44c42a14a4ccad2646ee
+      spriteID: 67ee9faef298546f2b16c7a4cdc29292
       vertices: []
       indices: 
       edges: []
@@ -321,18 +320,18 @@ TextureImporter:
       name: candle_00011
       rect:
         serializedVersion: 2
-        x: 724
-        y: 665
-        width: 107
-        height: 182
-      alignment: 9
-      pivot: {x: 0.5233645, y: 0.4065934}
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6214e266d6324e7087ce6ae7a6ca3cd
+      spriteID: dc6506cd2bc864c83a66d4f11aff3053
       vertices: []
       indices: 
       edges: []
@@ -341,18 +340,18 @@ TextureImporter:
       name: candle_00012
       rect:
         serializedVersion: 2
-        x: 104
-        y: 478
-        width: 105
-        height: 185
-      alignment: 9
-      pivot: {x: 0.5619048, y: 0.41621622}
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8040d0476457044b6ad4990695d043f0
+      spriteID: 2168636b58c9c4e70abd46c2edbfa6db
       vertices: []
       indices: 
       edges: []
@@ -361,18 +360,18 @@ TextureImporter:
       name: candle_00013
       rect:
         serializedVersion: 2
-        x: 310
-        y: 668
-        width: 108
-        height: 179
-      alignment: 9
-      pivot: {x: 0.5555556, y: 0.44134077}
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98f4aa4c13b414420a81912de7f331ec
+      spriteID: 3d83cbe4c3f934d58a2ef1e523303299
       vertices: []
       indices: 
       edges: []
@@ -381,18 +380,18 @@ TextureImporter:
       name: candle_00014
       rect:
         serializedVersion: 2
-        x: 110
-        y: 855
-        width: 107
-        height: 168
-      alignment: 9
-      pivot: {x: 0.62616825, y: 0.4047619}
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d38c03b15ed69471c8d8f11348afcf62
+      spriteID: fc2d49bb3c6c94f0ca6150413c6b381b
       vertices: []
       indices: 
       edges: []
@@ -401,18 +400,18 @@ TextureImporter:
       name: candle_00015
       rect:
         serializedVersion: 2
-        x: 533
-        y: 472
-        width: 110
-        height: 191
-      alignment: 9
-      pivot: {x: 0.6636364, y: 0.4450262}
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 408edf8e30dc845cd9d50ea5c8c7f014
+      spriteID: 6580d57c9cffb488ca30efc45e234333
       vertices: []
       indices: 
       edges: []
@@ -421,18 +420,18 @@ TextureImporter:
       name: candle_00016
       rect:
         serializedVersion: 2
-        x: 736
-        y: 852
-        width: 99
-        height: 171
-      alignment: 9
-      pivot: {x: 0.6666667, y: 0.42105263}
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44574444601c44d249c997f999ef38cc
+      spriteID: e49d9ec08a63a46b3bee7beca8d19523
       vertices: []
       indices: 
       edges: []
@@ -441,18 +440,18 @@ TextureImporter:
       name: candle_00017
       rect:
         serializedVersion: 2
-        x: 627
-        y: 667
-        width: 95
-        height: 180
-      alignment: 9
-      pivot: {x: 0.67368424, y: 0.41111112}
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51751e29861334a5295869ba969b0088
+      spriteID: a27a4f7e25b8b476ab0bd960857922a9
       vertices: []
       indices: 
       edges: []
@@ -461,18 +460,18 @@ TextureImporter:
       name: candle_00018
       rect:
         serializedVersion: 2
-        x: 219
-        y: 853
-        width: 98
-        height: 170
-      alignment: 9
-      pivot: {x: 0.64285713, y: 0.41764706}
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1174831dc110843a28ff4fa3be7d449e
+      spriteID: e12e536ba23204c04abe11317215ce35
       vertices: []
       indices: 
       edges: []
@@ -481,18 +480,18 @@ TextureImporter:
       name: candle_00019
       rect:
         serializedVersion: 2
-        x: 1
-        y: 673
-        width: 103
-        height: 174
-      alignment: 9
-      pivot: {x: 0.65048546, y: 0.44827586}
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1edb6a834d9da46df86a45e87a71a092
+      spriteID: 87432862b84594200a291ef5e2120ce5
       vertices: []
       indices: 
       edges: []
@@ -501,18 +500,18 @@ TextureImporter:
       name: candle_00020
       rect:
         serializedVersion: 2
-        x: 1
-        y: 478
-        width: 101
-        height: 185
-      alignment: 9
-      pivot: {x: 0.6039604, y: 0.39459458}
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a885b0a207de946da8e602aebc22d8be
+      spriteID: 9b6538353cea84c08a7c0ae693acb07a
       vertices: []
       indices: 
       edges: []
@@ -521,18 +520,18 @@ TextureImporter:
       name: candle_00021
       rect:
         serializedVersion: 2
-        x: 208
-        y: 672
-        width: 100
-        height: 175
-      alignment: 9
-      pivot: {x: 0.58, y: 0.4457143}
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3d90163ccc8445d08c971cc2a5e7a99
+      spriteID: 6673c8f7e0b334576bfe55b1eb83d04b
       vertices: []
       indices: 
       edges: []
@@ -541,18 +540,18 @@ TextureImporter:
       name: candle_00022
       rect:
         serializedVersion: 2
-        x: 628
-        y: 852
-        width: 106
-        height: 171
-      alignment: 9
-      pivot: {x: 0.5566038, y: 0.43274853}
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c54bb10ac24b41c290d5e9dc16783d0
+      spriteID: 44c89e179424b437688811df8f1d5ed6
       vertices: []
       indices: 
       edges: []
@@ -561,18 +560,18 @@ TextureImporter:
       name: candle_00023
       rect:
         serializedVersion: 2
-        x: 833
-        y: 665
-        width: 107
-        height: 182
-      alignment: 9
-      pivot: {x: 0.5233645, y: 0.4065934}
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0d62b3ce79a14f5280a34867800d29a
+      spriteID: 0641f827866fc4cdc97cb8be82a7d636
       vertices: []
       indices: 
       edges: []
@@ -580,7 +579,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3efc80e13be6440ccaeac508fe825447
+    spriteID: c353ef8429bc74237b50b2ddc3697894
     vertices: []
     indices: 
     edges: []
