@@ -174,6 +174,7 @@ public class CardManager : MonoBehaviour {
   }
 
   void StartActivate(Card card) {
+        Debug.Log("CardActivate");
     card.Activate();
     cardActivated.Invoke(card);
   }

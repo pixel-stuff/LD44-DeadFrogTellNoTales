@@ -57,6 +57,7 @@ public class AudienceCharacter : MonoBehaviour {
   }
 
   public void ApplyModifier(int epicness, int romance) {
+        Debug.Log("TOTO :" + epicness + " " + romance);
     if(neededEpicness > 0)
       currentEpicness -= epicness;
     if(neededRomance > 0)

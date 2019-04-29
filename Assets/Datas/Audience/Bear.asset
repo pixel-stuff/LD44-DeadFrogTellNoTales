@@ -16,8 +16,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: -0.5791599
+      value: 0.34669772
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25,8 +25,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 10
-      value: 1
+      time: 20.90149
+      value: 0.5083618
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicnessNeeds: {x: 2, y: 4}
+  epicnessNeeds: {x: 8, y: 10}
   romanceNeeds: {x: 0, y: 0}
   mainSprite: {fileID: 21300000, guid: 87c892d15bbbf4af0bf31b211213b5f0, type: 3}
   backgroundSprite: {fileID: 21300000, guid: 79e3ab8b5ac424ef9aa8cd2d862143cb, type: 3}

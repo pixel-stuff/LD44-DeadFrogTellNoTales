@@ -184,5 +184,22 @@ PrefabInstance:
       propertyPath: nextSceneString
       value: Level1
       objectReference: {fileID: 0}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: c9446b9766243479cb8d7c6286b6f82c,
+        type: 2}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f798894cb3bbe40deb391c306cf2fd11,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ac18c888ee22f740b9d6d1cd16076a7, type: 3}
