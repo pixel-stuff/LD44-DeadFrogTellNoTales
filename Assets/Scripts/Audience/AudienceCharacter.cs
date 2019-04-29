@@ -44,9 +44,10 @@ public class AudienceCharacter : MonoBehaviour {
       romanceStringUpdated.Invoke(currentRomance.ToString());
     cardSpriteUpdated.Invoke(data.mainSprite);//this.GetComponent<Image>().sprite = data.calmSprite;
     DebugOver = false;
-    isFilled.Invoke(this);
     isOverrideControllerFilled.Invoke(data.overrideController);
     isBackgroundImageFilled.Invoke(data.backgroundSprite);
+    cardSpriteUpdated.Invoke(data.mainSprite);
+    isFilled.Invoke(this);
   }
 
   // Update is called once per frame
@@ -57,7 +58,7 @@ public class AudienceCharacter : MonoBehaviour {
   }
 
   public void ApplyModifier(int epicness, int romance) {
-        Debug.Log("TOTO :" + epicness + " " + romance);
+        //Debug.Log("TOTO :" + epicness + " " + romance);
     if(neededEpicness > 0)
       currentEpicness -= epicness;
     if(neededRomance > 0)
