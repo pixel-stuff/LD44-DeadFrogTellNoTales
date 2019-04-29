@@ -37,7 +37,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ressources:
-  - values: {x: 1, y: 5}
+  - values: {x: 2, y: 4}
     type: 0
     data: {fileID: 11400000, guid: b6d01159d1c1e4f44bd7615169ce43c0, type: 2}
   - values: {x: 1, y: 3}
