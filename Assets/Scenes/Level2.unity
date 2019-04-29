@@ -318,11 +318,65 @@ PrefabInstance:
       propertyPath: nextSceneString
       value: Level2
       objectReference: {fileID: 0}
+    - target: {fileID: 4741677841185674907, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: firstStartScore
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677841185674907, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: secondStartScore
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677841185674907, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: thirdStartScore
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677841676503175, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: maxTimeSecond
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 744ece91fb5175949b297887cf223fe4,
+        type: 2}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 78ef88979bff34e4c9341ae9f422c1b4,
+        type: 2}
+    - target: {fileID: 4741677840371849931, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: audienceList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a64b745f04bf14412b586fdf1cb7ba61,
+        type: 2}
     - target: {fileID: 4741677841454146740, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4741677842043309383, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: m_Text
+      value: lvl. 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741677842043309383, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: add21b5be2beb43569303fc8403256cc,
+        type: 3}
     - target: {fileID: 4741677841710433968, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
         type: 3}
       propertyPath: m_IsActive

@@ -36,8 +36,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicnessNeeds: {x: 2, y: 4}
-  romanceNeeds: {x: 0, y: 0}
+  epicnessNeeds: {x: 1, y: 4}
+  romanceNeeds: {x: 0, y: 4}
   mainSprite: {fileID: 21300000, guid: 611a1e57ab8bf4b51b454a6ffa85b3b5, type: 3}
   backgroundSprite: {fileID: 21300000, guid: 1e07f844730394a158ac0cec3e4d3f1a, type: 3}
   isBoss: 0

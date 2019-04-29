@@ -10,35 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 767ea3875a9076d4cbbb5dabc460fa62, type: 3}
-  m_Name: Horse
+  m_Name: Bear Boss
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      time: -0.06712117
+      value: 0.82956153
+      inSlope: 0.159718
+      outSlope: 0.159718
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 10
+      time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      inSlope: 0.159718
+      outSlope: 0.159718
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicnessNeeds: {x: 2, y: 3}
-  romanceNeeds: {x: 4, y: 6}
-  mainSprite: {fileID: 21300000, guid: 962c25eaa59e44f86a55ce3f38cd0de1, type: 3}
-  backgroundSprite: {fileID: 21300000, guid: 1e07f844730394a158ac0cec3e4d3f1a, type: 3}
-  isBoss: 0
-  overrideController: {fileID: 22100000, guid: 68a607ac263494e25b97436bdfcf3ad6, type: 2}
+  epicnessNeeds: {x: 7, y: 8}
+  romanceNeeds: {x: 2, y: 3}
+  mainSprite: {fileID: 21300000, guid: 87c892d15bbbf4af0bf31b211213b5f0, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 79e3ab8b5ac424ef9aa8cd2d862143cb, type: 3}
+  isBoss: 1
+  overrideController: {fileID: 22100000, guid: 2262cc7e11908423cb68552db1c0e738, type: 2}

@@ -199,7 +199,13 @@ PrefabInstance:
         type: 3}
       propertyPath: audienceList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: f798894cb3bbe40deb391c306cf2fd11,
+      objectReference: {fileID: 11400000, guid: 384de667b38c9fa4597c6195c1abb881,
         type: 2}
+    - target: {fileID: 4741677842043309383, guid: 9ac18c888ee22f740b9d6d1cd16076a7,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: add21b5be2beb43569303fc8403256cc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ac18c888ee22f740b9d6d1cd16076a7, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 767ea3875a9076d4cbbb5dabc460fa62, type: 3}
-  m_Name: Horse
+  m_Name: Horse BOSS
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
@@ -25,8 +25,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 10
-      value: 1
+      time: 9.796799
+      value: 1.0960354
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36,9 +36,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  epicnessNeeds: {x: 2, y: 3}
-  romanceNeeds: {x: 4, y: 6}
+  epicnessNeeds: {x: 1, y: 2}
+  romanceNeeds: {x: 9, y: 10}
   mainSprite: {fileID: 21300000, guid: 962c25eaa59e44f86a55ce3f38cd0de1, type: 3}
   backgroundSprite: {fileID: 21300000, guid: 1e07f844730394a158ac0cec3e4d3f1a, type: 3}
-  isBoss: 0
+  isBoss: 1
   overrideController: {fileID: 22100000, guid: 68a607ac263494e25b97436bdfcf3ad6, type: 2}
