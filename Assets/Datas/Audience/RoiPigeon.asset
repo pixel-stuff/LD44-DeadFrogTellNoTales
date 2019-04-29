@@ -38,5 +38,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   epicnessNeeds: {x: 2, y: 4}
   romanceNeeds: {x: 0, y: 0}
-  calmSprite: {fileID: 21300000, guid: aee24c54c6a073545901676832dc9fae, type: 3}
-  isBoss: 0
+  mainSprite: {fileID: 21300010, guid: 07ccdcf049ee24d07b5d3adc4d3d6365, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 12bc0d60d10c54e568399a2396e4120a, type: 3}
+  isBoss: 1
+  overrideController: {fileID: 0}
