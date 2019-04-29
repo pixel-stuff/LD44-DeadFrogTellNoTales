@@ -102,6 +102,7 @@ public class CardManager : MonoBehaviour {
       selectedCards.Add(cardClicked);
       cardFirstSelected.Invoke(cardClicked);
       LinkActivated.Invoke(link);
+      UpdateNearSelectedCard(cardClicked);
     }
   }
 
@@ -135,8 +136,10 @@ public class CardManager : MonoBehaviour {
       var link = default(Link);
       if(selectedCards.Count() == 1) {
         link = GetLink(cardClicked, cards.FirstOrDefault(c => c.isPlayer));
+        UpdateNearSelectedCard(cards.FirstOrDefault(c => c.isPlayer));
       } else {
         link = GetLink(cardClicked, selectedCards[selectedCards.Count - 2]);
+        UpdateNearSelectedCard(selectedCards[selectedCards.Count - 2]);
       }
       link.gameObject.SetActive(false);
       selectedCards.Remove(cardClicked);
