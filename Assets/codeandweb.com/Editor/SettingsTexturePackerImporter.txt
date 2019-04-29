@@ -3,7 +3,6 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Sprites/Audience/bear.tpsheet
-- Assets/Sprites/Audience/candle.tpsheet
 - Assets/Sprites/Audience/dog.tpsheet
 - Assets/Sprites/Audience/horse.tpsheet
 - Assets/Sprites/Audience/lama.tpsheet
@@ -11,14 +10,12 @@ tpsheetFileNames:
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/Audience/bear.png
-- Assets/Sprites/Audience/candle.png
 - Assets/Sprites/Audience/dog.png
 - Assets/Sprites/Audience/horse.png
 - Assets/Sprites/Audience/lama.png
 - Assets/Sprites/Audience/pigeon.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
-- 
 - 
 - 
 - 
