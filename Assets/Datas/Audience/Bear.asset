@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 767ea3875a9076d4cbbb5dabc460fa62, type: 3}
-  m_Name: RoiPigeon
+  m_Name: Bear
   m_EditorClassIdentifier: 
   weightCurve:
     serializedVersion: 2
@@ -38,7 +38,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   epicnessNeeds: {x: 2, y: 4}
   romanceNeeds: {x: 0, y: 0}
-  mainSprite: {fileID: 21300010, guid: 07ccdcf049ee24d07b5d3adc4d3d6365, type: 3}
-  backgroundSprite: {fileID: 21300000, guid: 12bc0d60d10c54e568399a2396e4120a, type: 3}
-  isBoss: 1
-  overrideController: {fileID: 0}
+  mainSprite: {fileID: 21300000, guid: 87c892d15bbbf4af0bf31b211213b5f0, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 79e3ab8b5ac424ef9aa8cd2d862143cb, type: 3}
+  isBoss: 0
+  overrideController: {fileID: 22100000, guid: 2262cc7e11908423cb68552db1c0e738, type: 2}
