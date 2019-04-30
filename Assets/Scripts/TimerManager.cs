@@ -29,6 +29,8 @@ public class TimerManager : MonoBehaviour
         float timePercent = timeSecond / maxTimeSecond;
 
         Candle.transform.localPosition = new Vector3(Candle.transform.localPosition.x, pixelToMove * timePercent, Candle.transform.localPosition.z);
-        timerEvent.Invoke(((int)(timeSecond)).ToString());
+        string Ssecond = ((int)(timeSecond % 60)).ToString();
+        string SMinute = ((int)(timeSecond / 60)).ToString();
+        timerEvent.Invoke(SMinute + ":" + Ssecond);
     }
 }
