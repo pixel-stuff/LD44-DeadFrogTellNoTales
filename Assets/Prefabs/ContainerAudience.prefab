@@ -5179,7 +5179,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1, y: 5}
-  m_SizeDelta: {x: 470, y: 470}
+  m_SizeDelta: {x: 447.75, y: 470}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1622480893146377780
 CanvasRenderer:
@@ -5209,7 +5209,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: da80441283130450ba04fc3581ba9094, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 6fbb6939c106947bf90253966b9ea73c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5583,7 +5583,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622480893443583925}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
