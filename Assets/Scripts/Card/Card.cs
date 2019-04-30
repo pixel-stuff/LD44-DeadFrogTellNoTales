@@ -18,6 +18,8 @@ public enum Position {
   BottomRight
 }
 
+[System.Serializable] public class MyAudioSourceEvent : UnityEvent<AudioClip> { }
+
 public class Card : MonoBehaviour {
 
   [Header("Required")]
@@ -41,12 +43,17 @@ public class Card : MonoBehaviour {
   [SerializeField] IntEvent EpicnessActivated;
   [SerializeField] IntEvent RomanceActivated;
 
-  public CardData refData { get; set; }
+    [SerializeField] MyAudioSourceEvent CroassementEvent;
+
+    public CardData refData { get; set; }
   public int epicness { get; set; }
   public int romance { get; set; }
   public bool isLinked { get; set; }
   public bool isPlayer { get { return refData.isPlayer; } }
   public bool needInject { get; set; }
+
+    public AudioClip[] croassements;
+    static int croasementIndex = 0;
 
   public bool DebugDisappear = true;
 
@@ -76,7 +83,12 @@ public class Card : MonoBehaviour {
   public void Appear() => Appeared.Invoke(this);
   public void Disappear() => Disappeared.Invoke(this);
   public void TriggerEndAppeared() => EndAppeared.Invoke(this);
-  public void TriggerEndDisappeared() => EndDisappeared.Invoke(this);
+    public void Croassement()
+    {
+        croasementIndex++;
+        CroassementEvent.Invoke(croassements[croasementIndex % 4]);
+    }
+    public void TriggerEndDisappeared() => EndDisappeared.Invoke(this);
   public void TriggerEndActivated() => EndActivated.Invoke(this);
   public void TriggerNearSelected() => NearSelected.Invoke(colorNear);
   public void TriggerNotNearSelected() => NotNearSelected.Invoke(colorNotNear);
