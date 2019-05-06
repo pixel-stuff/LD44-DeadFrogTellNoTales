@@ -53,9 +53,14 @@ public class Card : MonoBehaviour {
   public bool needInject { get; set; }
 
     public AudioClip[] croassements;
-    static int croasementIndex = 0;
+    static public int croasementIndex = 0;
 
   public bool DebugDisappear = true;
+
+    public void Start()
+    {
+        croasementIndex = 0;
+    }
 
   public void Inject(CardData data) {
     refData = data;

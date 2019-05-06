@@ -199,6 +199,7 @@ public class CardManager : MonoBehaviour {
   }
 
   void TriggerPathDone() {
+        Card.croasementIndex = 0;
     PathDone.Invoke();
 
     InjectCard(cards.FirstOrDefault(c => c.isPlayer));

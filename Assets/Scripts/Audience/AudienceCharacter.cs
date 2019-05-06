@@ -42,7 +42,7 @@ public class AudienceCharacter : MonoBehaviour {
       epicnessStringUpdated.Invoke(currentEpicness.ToString());
     if(currentRomance > 0)
       romanceStringUpdated.Invoke(currentRomance.ToString());
-    cardSpriteUpdated.Invoke(data.mainSprite);//this.GetComponent<Image>().sprite = data.calmSprite;
+    //cardSpriteUpdated.Invoke(data.mainSprite);//this.GetComponent<Image>().sprite = data.calmSprite;
     DebugOver = false;
     isOverrideControllerFilled.Invoke(data.overrideController);
     isBackgroundImageFilled.Invoke(data.backgroundSprite);
